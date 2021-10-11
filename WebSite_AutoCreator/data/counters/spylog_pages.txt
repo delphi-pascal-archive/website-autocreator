@@ -1,0 +1,7 @@
+<!-- SpyLOG -->
+<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="667008" ></script>
+<noscript>
+<a href="http://u6670.08.spylog.com/cnt?cid=667008&f=3&p=0" target="_blank">
+<img src="http://u6670.08.spylog.com/cnt?cid=667008&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+</noscript>
+<!--/ SpyLOG -->

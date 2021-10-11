@@ -1,0 +1,7 @@
+body, p, td, br, table {font-family: Arial; font-size: 8pt}
+h1 {font-family: Arial; font-weight: normal; font-size: 12pt}
+h2 {font-family: Arial; font-weight: normal; font-size: 10pt}
+a:link {text-decoration: none; color:#F7F7F7}
+a:active {text-decoration: none}
+a:visited {text-decoration: none; color:#F7F7F7}
+a:hover {text-decoration: underline; color:#F7F7F7}

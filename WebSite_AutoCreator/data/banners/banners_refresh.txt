@@ -1,0 +1,41 @@
+var k;
+imgprint=1; // количество баннеров на странице
+imgall=3; // номер последнего баннера
+var ran=new Array(imgprint-1);
+function random_number()
+{
+ return Math.round(Math.random() * imgall);
+}
+function check(num)
+{
+ while(k!=num)
+ {
+  ran[num]=random_number();
+  k=0;
+  for(a=0;a<num;a++)
+  {
+   if(ran[a]!=ran[num])
+   {
+    k++
+   }
+  }
+ }
+}
+ran[0]=random_number();
+for(a=1;a<imgprint;a++)
+{
+ check(a);
+}
+img=new Array(imgall);
+link=new Array(imgall);
+alt=new Array(imgall);
+img[0]="../images/baners/banner_ds.gif"; link[0]="http://www.fullsource.nm.ru"; alt[0]="Программирование на Delphi, огромное количество редких и интересных исходников на Delphi, программы, статьи, форум и многое другое";
+img[1]="../images/baners/ru_links.gif";  link[1]="http://www.fullsource.nm.ru"; alt[1]="Ru Links - Новый каталог ресурсов Интернет, ссылки на сайты, описание ресурсов, добавление сайтов в каталог";
+img[2]="../images/baners/more.jpg";      link[2]="http://www.fc-shaurma.nm.ru"; alt[2]="Отдых на Море - Быстрое и качественное оформление путевок в Турцию, Болгарию, Грецию, Кипр, Черноморское побережье, проживание";
+img[3]="../images/baners/web_host.gif";  link[3]="http://www.fc-shaurma.nm.ru"; alt[3]="WEB-HOSTING - Год хостинга + бесплатный домен всего за $49! Не дорого, надежно и просто!";
+for(i=0;i<imgprint;i++)
+{
+ document.write('<a href="'+link[ran[i]]+'" target="_blank">');
+ document.write('<img border=0 src="'+img[ran[i]]+'"'); document.write('alt="'+alt[ran[i]]+'"></a>');
+}
+document.write('</center>');
